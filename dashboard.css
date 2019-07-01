@@ -43,28 +43,68 @@ body, html {
   margin: 0;
   padding-bottom: 80px;
 }
-.new{
-  padding: 2px 8px;
-  background: #A94442;
-  color: #fff;
-  position: absolute;
-  right: -4px;
-  top: -4px;
-  font-size: 14px;
-  font-family: "pragati narrow";
-  font-weight: bold;
-  border-radius: 12px;
-  line-height: 1;
-}
-.resJourney{
-  max-width: 700px;
-  margin: 12px auto;
-  width: calc(100% - 16px);
-  display: flex;
+.modules{
   background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.25);
+  max-width: 700px;
+  width: calc(100% - 16px);
+  margin:16px auto;
+}
+.quote{
+  background:#738288;
+  height: 176px;
+  position: relative;
+  margin: 16px auto 8px;
+  border-radius: 3px;
+  padding: 16px;
+  text-align: center;
+  color: #fff;
+}
+.quoteContent{
+
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.quoteContent .main{
+  color: #fff;
+  font-family: "pragati narrow";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.3;
+  height: calc(100% - 22px);
+display: flex;
+align-items: center;
+}
+.quoteContent .name{
+  color: #fff;
+  font-family: "montserrat";
+  font-size: 14px;
+  height: 22px;
+}
+.arrowWrap{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+}
+.arrow{
+  stroke: #1E3E4C;
+  stroke-width: 4px;
+  fill: none;
+  font-size: 12px;
+  }
+  .white{
+    stroke: #fff;
+  }
+.resJourney{
+  margin: 16px auto;
+  display: flex;
   position: relative;
   border-radius: 3px;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.25);
 }
 .resThumb{
   width: 106px;
@@ -76,6 +116,11 @@ body, html {
   width: calc(100% - 106px);
   padding: 4px 0;
   color: #1E3E4C;
+}
+.assignment{
+  font-size: 12px;
+  font-family: "montserrat";
+  color: #445664;
 }
 .boxtitle{
   font-family: "pragati narrow";
@@ -108,169 +153,96 @@ body, html {
   font-weight: bold;
   line-height: 1;
 }
-.assignment{
-  font-size: 12px;
-  font-family: "montserrat";
-  color: #445664;
+.call{
+  padding:16px;
 }
 
-/*progress*/
-#progress{
-  position: relative;
-  overflow: hidden;
-  max-width: 700px;
-  margin:0 auto 12px;
-  padding: 56px 0 16px;
-  background: #fff;
+.callContent{
   width: 100%;
+  background: #E7EBED;
+  padding: 16px;
+  position: relative;
   color: #1E3E4C;
 }
-
-#progress_bar{
- width: 580px;
-  transition: .3s;
+.callContent .title{
+  font-family: "pragati narrow";
+  font-size: 18px;
+  font-weight: bold;
+}
+.callContent .date{
+  font-family: "montserrat";
+  font-size: 12px;
+  margin-top: 4px;
+}
+.callContent .arrowWrapper{
+  height: 23px;
+  position: absolute;
+  top: 50%;
+  transform:translateY(-50%);
+  right: 16px;
+  display: flex;
+  font-size: 14px;
+  color: #9B9B9B;
+  align-items: center;
+  flex-direction: row;
+}
+.callContent .arrowWrapper .arrow{
+  stroke:#9b9b9b;
+}
+.goal{
+  padding: 16px 0 24px 16px;
+  color: #1E3E4C;
+}
+.goal .titleWrap{
   display: flex;
   justify-content: space-between;
-  position:absolute;
-  /* transform: translateX(-44%); */
-  align-items: center;
-  top:16px ;
-  right: 84px;
+  padding-right: 16px;
 }
-.phase5{
-  right: -12.28px;
-}
-@media screen and (min-width: 586px){
-  #progress_bar{
-    right: 50%;
-    transform: translateX(50%);
-  }
-}
-
-#greybar{
-  height: 6px;
-  width: 100%;
-  background: #E9EAEC;
-  position:absolute;
-  left: 0;
-  top: 17px;
-  z-index: 0;
-  border-radius: 3px;
-}
-#bar{
-  height: 6px;
-  width: 93%;
-  background: #1e3f4d;
-  position:absolute;
-  left: 0;
-  top: 17px;
-  z-index: 0;
-  border-radius: 3px;
-}
-#progress_bar .phaseNum{
-transition: .3s;
-width: 28px;
-height: 28px;
-font-family: "pragati narrow";
-font-size: 18px;
-color: #fff;
-background: #1e3f4d;
-font-weight: bold;
-border-radius: 16px;
-z-index: 999;
-display:flex;
-align-items:center;
-justify-content: center;
-}
-#progress_bar .phaseNum.active{
-  transition: .3s;
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  background: #fff;
-  border: 4px solid #1e3f4d;
-  color: #1e3f4d;
-} 
-#progress_bar .phaseNum.deactive{
-  width: 20px;
-  height: 20px;
-  background: #E9EAEC;
-} 
-#progress_title{
-
-  padding: 4px 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.phase{
+.goal .title{
+  text-transform: uppercase;
   font-size: 18px;
   font-family: "pragati narrow";
-}
-#progress_title .title{
-  font-size: 36px;
-}
-.arrow{
-stroke: #1E3E4C;
-stroke-width: 4px;
-fill: none;
-}
-.arrow.deactive{
-  stroke: #e9eaec
-}
-.arrow.active{
-  stroke: #fff
-}
-.progress_content{
-  opacity: 0;
-  transition: .3s;
-  width: calc(100% - 22px);
-  padding-left: 24px;
-  margin: 16px auto;
-}
-.assignments{
-  max-width: 700px;
-  padding-right: 16px;
-  margin: 8px auto 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #fff;
-  color: #1E3E4C;
-}
-.assignments.active{
-  background: #1E3E4C;
-  color: #fff;
-}
-.assignments.deactive{
-  opacity: .5;
-}
-.assignments .thumb{
-  width: 76px;
-  height: 76px;
-  background :#AFAFAF;
-}
-.assignments .assignment_content{
-  width: calc(100% - 103px);
-  line-height: 1.7;
-  padding-left: 8px;
-}
-.assignments .assignment_content .week{
-  margin-bottom: 4px;
-}
-.assignments .assignment_content .title{
-  margin-bottom: 4px;
-}
-.comingUp{
-  margin: 28px auto 0;
-  width: 100%;
-  max-width: 700px;
-  padding-left: 8px;
-  font-size:18px;
-  font-family: "pragati narrow";
   font-weight: bold;
-  color: #1E3E4C;
+}
+.goal .content{
+  font-family: "montserrat";
+  font-size: 14px;
+  margin-top: 8px;
+  line-height: 1.3;
+}
+.goal .noline{
+  border-bottom: 0px;
+}
+.goal_content{
+  margin-left: 16px;
+  border-bottom: 2px solid #E7EBED;
+  padding: 16px 16px 16px 0;
+}
+.team{
+  padding: 16px;
+}
+.memberWrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+.member{
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 16px 0;
+}
+.photo{
+  width: 56px;
+  height: 56px;
+  border-radius: 28px;
+  background: #ccc;
+}
+.name{
+  font-family: "montserrat";
+  font-size: 14px;
+  color: #1e3f4d;
+
 }
 #footerWrap{
   position:fixed;
@@ -285,28 +257,39 @@ fill: none;
 #footer{
   margin: 0 auto;
 }
-.dots{
-width: 100%;
-height: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-.dot{
-  background: #C4C4C4;
-  width: 10px;
-  height: 10px;
-  border-radius: 5px;
-  margin: 4px;
-}
 .desktop{
   display: none;
+}
+.nomargin{
+  padding: 0 0 8px;
+  border-bottom: 0px;
+
+}
+.memberDetail{
+  background: #E7EBED;
+  color: #1E3E4C;
+  padding: 32px;
+  width: 100%;
+}
+.memberDetail .title{
+  font-weight: bold;
+  font-size: 18px;
+}
+.memberDetail .goalsWrapper{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.goalsWrapper .member_goals{
+  width: 50%;
+  margin: 32px auto 8px;
 }
 @media screen and (min-width: 1200px){
   .mainBody{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    margin: 0 auto;
   }
   .resJourney{
     margin:16px 8px;
@@ -314,35 +297,51 @@ align-items: center;
     align-self:flex-start;
   }
   .divider{
+    display: flex;
     padding-top: 16px;
     width: 100%;
-    margin:0 8px;
-    max-width: 700px;
+    margin:0 auto;
+    max-width: 1200px;
+    padding: 0;
   }
-  #progress{
-    padding-top:72px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.25);
+  .resThumb{
+    width: 154px;
+    height: 154px;
   }
-  #progress_bar{
-    top: 32px;
+  .quote{
+    max-width: 600px;
+    height: 200px;
   }
-  .progress_content{
-  margin-top: 32px;
-  padding-left: 36px;
+  .quoteContent{
+    padding-bottom: 16px;
   }
-  #break{
-    display: none;
+  .quote .main{
+    max-width: 380px;
+    font-size: 21px;
+  }
+  .quote .name{
+    font-size: 16px;
+  }
+  .resJourney{
+    height: 200px;
+  }
+  .team, .call{
+    align-self: flex-start;
+  }
+  .modules{
+    margin: 16px 8px 0;
   }
   .mobile{
+
     display:none;
     overflow: hidden;
   }
   .desktop{
+    max-width: 600px;
     display: flex;
   }
   .resContent{
     width: 100%;
-    max-width: 375px;
     padding-bottom: 0;
   }
   .boxtitle{
@@ -353,13 +352,21 @@ align-items: center;
   }
   .wrapper{
     width:calc(100% - 122px);
-    padding-left: 16px;
+    padding-left: 24px;
   }
   .week{
     margin-bottom: 4px;
+    font-size: 14px;
   }
   .wrapper .title{
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 12px;
+  }
+  .contents .assignment{
+    margin-top: 24px;
+    font-size: 16px;
+  }
+  .nomargin{
+    padding: 0 0 8px;
   }
 }

@@ -13,7 +13,9 @@
 
 <body>
     <div id="header">
+            <a href="dashboard.html" >
         <div id="topBar"> </div>
+        </a>
         <div id="bottomBar"> </div>
         </a>
 
@@ -210,11 +212,12 @@
             let width = $(window).width();
             $(".progress_content").css("opacity","1");
             $("#prev").click(function(){
-                if(width < 1200){
+                if(width < 586){
                 $("#progress_bar").css("right","-12.28px");
                 }
                 $(".progress_content").css("opacity","0");
                 $("#6").removeClass("active");
+                $("#progress_bar .phaseNum").css("margin-top","6px");
                 window.setTimeout(function(){
                     window.location="index 2.html";
                 }, 200);

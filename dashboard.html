@@ -18,21 +18,22 @@
         </a>
 
         <div class="mainBody">
-
             <div class="divider">
                 <div class="quote modules">
+                    <img src="fire.png" id = "fire"/>
                     <div class="quoteContent">
                         <div class="main">“Human potential at its best is to transform a tragedy into a personal
                             triumph,
                             to turn one’s predicament into a human acheivement.”</div>
                         <div class="name">- Viktor E. Frankl</div>
-
+                        <a href="quote.html" >
                         <div class="arrow white arrowWrap">
                             <!-- See full quote &nbsp; -->
                             <svg width="12px" height="18px">
                                 <path d="M 0 1 L 10 9 L 0 17" />
                             </svg>
                         </div>
+                    </a>
                     </div>
                 </div>
 
@@ -126,19 +127,19 @@
                 <div class="team modules">
                     <div class="boxtitle nomargin">Your Team</div>
                     <div class="memberWrap">
-                        <div class="member">
+                        <div class="member top">
                             <div class="photo"></div>
                             <div class="name">Ned</div>
                         </div>
-                        <div class="member">
+                        <div class="member top">
                             <div class="photo"></div>
                             <div class="name">John</div>
                         </div>
-                        <div class="member">
+                        <div class="member top">
                             <div class="photo"></div>
                             <div class="name">Smith</div>
                         </div>
-                        <div class="memberDetail">
+                        <div class="memberDetail" id = "detail1">
                             <div class="title">I AM...</div>
                             <div class="content">a father and a husband</div>
 
@@ -162,14 +163,38 @@
                             </div>
 
                         </div>
-                        <div class="member">
+                        <div class="member bottom">
                             <div class="photo"></div>
                             <div class="name">Paul</div>
                         </div>
-                        <div class="member">
+                        <div class="member bottom">
                             <div class="photo"></div>
                             <div class="name">Eric</div>
                         </div>
+                        <div class="memberDetail" id = "detail2">
+                                <div class="title">I AM...</div>
+                                <div class="content">a father and a husband</div>
+    
+                                <div class="goalsWrapper">
+                                    <div class="member_goals">
+                                        <div class="title">Mind</div>
+                                        <div class="content">No active goals</div>
+                                    </div>
+                                    <div class="member_goals">
+                                        <div class="title">Finance</div>
+                                        <div class="content">No active goals</div>
+                                    </div>
+                                    <div class="member_goals">
+                                        <div class="title">Body</div>
+                                        <div class="content">No active goals</div>
+                                    </div>
+                                    <div class="member_goals">
+                                        <div class="title">Spirit</div>
+                                        <div class="content">• In the next 30 days I will plan 2 family get together</div>
+                                    </div>
+                                </div>
+    
+                            </div>
                     </div>
                 </div>
 
@@ -182,17 +207,50 @@
             crossorigin="anonymous"></script>
         <script>
             let width = $(window).width();
-            $(".progress_content").css("opacity", "1");
-            $("#prev").click(function () {
-                if (width < 1200) {
-                    $("#progress_bar").css("right", "-12.28px");
-                }
-                $(".progress_content").css("opacity", "0");
-                $("#6").removeClass("active");
-                window.setTimeout(function () {
-                    window.location = "index 2.html";
-                }, 200);
-            })
+            $('.top').click(function(){
+                if($(this).hasClass("active")){
+                $('.member').removeClass("active");
+                $('#detail1').css({'height':'0px', "opacity":"0"});
+                $('#detail2').css({'height':'0px', "opacity":"0"});
+                window.setTimeout(function(){ $('#detail1').css('display','none'); $('#detail2').css('display','none');},200)
+                } else{
+                    $('.member').removeClass("active");
+                    $('#detail1').css({'height':'0px', "opacity":"0"});
+                    $('#detail2').css({'height':'0px', "opacity":"0"});
+                    window.setTimeout(function(){ 
+                        $('#detail1').css('display','none'); 
+                        $('#detail2').css('display','none')
+                        $(this).addClass("active");
+                    $('#detail1').css({"display":"block"});
+                    window.setTimeout(function(){$('#detail1').css({'height':'308px', "display":"block", "opacity":"1"});}, 10);
+                 }.bind(this),200)
+                
+                    }
+               
+                
+            });
+
+             $('.bottom').click(function(){
+                if($(this).hasClass("active")){
+                $('.member').removeClass("active");
+                $('#detail1').css({'height':'0px', "opacity":"0"});
+                $('#detail2').css({'height':'0px', "opacity":"0"});
+                window.setTimeout(function(){ $('#detail1').css('display','none'); $('#detail2').css('display','none')},300)
+                } else{
+                    $('.member').removeClass("active");
+                    $('#detail1').css({'height':'0px', "opacity":"0"});
+                    $('#detail2').css({'height':'0px', "opacity":"0"});
+                    window.setTimeout(function(){ $('#detail1').css('display','none'); 
+                    $('#detail2').css('display','none')
+                    $(this).addClass("active");
+                    $('#detail2').css({"display":"block"});
+                    window.setTimeout(function(){$('#detail2').css({'height':'308px', "display":"block", "opacity":"1"});}, 50);
+                }.bind(this),200)
+               
+                   }
+               
+                
+            });
         </script>
 </body>
 

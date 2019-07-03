@@ -1,0 +1,254 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700, 900");
+@import url("https://fonts.googleapis.com/css?family=Catamaran:900");
+div, a, img, input {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'lato', 'sans-serif', 'calibri';
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+  color: rgba(0, 0, 0, 0.9);
+  line-height: 1.6; ;
+  background: #fff;
+}
+#header {
+  width: 100%;
+  height: 88px;
+}
+#topBar, #bottomBar{
+  width: 100%;
+  height: 44px;
+  background: #fff;
+ 
+}
+#topBar{
+  background: #1e3f4d;
+}
+#bottomBar{
+  border-bottom: 1px solid #000;
+}
+.mainBody{
+  background: #fff;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 80px;
+}
+.modules{
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.25);
+  max-width: 700px;
+  width: calc(100% - 16px);
+  margin:16px auto;
+}
+.curChapter{
+  width: 100%;
+  height: 216px;
+  background: url("img/banner.png"), #5b7f95;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  position: relative;
+}
+.curChapter .wrapper{
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform:translateX(-50%);
+  width: 100%;
+  padding: 16px;
+  max-width: 1200px;
+  
+}
+.curChapter .week{
+  font-family: "pragati narrow";
+  font-size: 18px;
+  font-weight: bold;
+  color: #d8d8d8;
+  line-height: 1;
+}
+.curChapter .title{
+  font-size: 36px;
+  font-family: "pragati narrow";
+  font-weight: bold;
+  color: #fff;
+}
+.checklist{
+  text-align: left;
+  background:#E7EBED;
+  position: relative;
+  margin: 32px auto;
+  border-radius: 3px;
+  padding: 16px;
+  text-align: center;
+  color: #1E3E4C;
+  overflow: hidden;
+}
+.checklist .title{
+  width: 100%;
+  text-align: left;
+  font-family: "pragati narrow";
+  font-size: 22px;
+  font-weight: bold;
+
+}
+.checkContent{
+  display: flex;
+  align-items: center;
+  margin: 8px auto 16px;
+}
+.checkContent img{
+  margin: 0 6px 0 4px;
+}
+.checkContent input{
+width: 24px;
+height: 24px;
+background: #fff;
+border:1px solid #e8e8ed;
+}
+
+.checkContent .content{
+  text-align: left;
+  width: 100%;
+  font-family: "montserrat";
+  font-size: 14px;
+}
+.arrowWrap{
+  display: flex;
+  align-items: center;
+  right: 16px;
+  bottom: 16px;
+}
+.arrow{
+  stroke: #1E3E4C;
+  stroke-width: 4px;
+  fill: none;
+  font-size: 12px;
+  transform: rotate(90deg);
+  }
+  .arrow.active{
+    transform: rotate(-90deg);
+  }
+  .white{
+    stroke: #fff;
+  }
+.titleBar{
+  padding: 14px;
+  background: #738288;
+  width: 100%;
+  color: #fff;
+  font-family: "montserrat";
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.assignment_content{
+  background: #F6F6F6;
+  width: 100%;
+  padding: 1px 24px;
+  height: 0;
+  transition: .3s;
+  overflow: hidden;
+}
+.assignment_content.active{
+  height: auto;
+  padding: 24px;
+}
+.assignment_content .title{
+  font-family: "montserrat";
+  font-size: 14px;
+  color: #445664;
+  line-height: 1.4;
+}
+.assignment_content .answers{
+  width: 100%;
+  border:1px solid #e8e8ed;
+  height: 60px;
+  font-family: "montserrat";
+  font-size: 12px;
+  padding: 8px;
+}
+.btn{
+  background: #B75A41;
+  font-size: 14px;
+  font-family: "pragati narrow";
+  width:125px;
+  height: 48px;
+  padding: 17px 0;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+  margin: 32px auto;
+  cursor: pointer;
+}
+.inputWrapper{
+  vertical-align: top;
+  margin: 16px auto 32px;
+}
+@media screen and (min-width: 1200px){
+  .mainBody{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    position: relative;
+  }
+  .divider{
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+    width: 100%;
+    margin:0 auto;
+    max-width: calc(1200px);
+    padding-left: 422px;
+
+  }
+  .checklist{
+    max-width: 358px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-586px);
+    top: 0;
+  }
+  .modules{
+    margin: 16px 8px 0;
+  }
+  .mobile{
+    display:none;
+    overflow: hidden;
+  }
+  .desktop{
+    max-width: 600px;
+    display: flex;
+  }
+  .boxtitle{
+    padding:8px 16px 4px;
+  }
+  .contents{
+    padding: 0 16px 0 0;
+  }
+  .assignment_content .title{
+  line-height: 1.5;
+  }
+  .week{
+    margin-bottom: 4px;
+    font-size: 14px;
+  }
+  .contents .assignment{
+    margin-top: 24px;
+    font-size: 16px;
+  }
+  .nomargin{
+    padding: 0 0 8px;
+  }
+}

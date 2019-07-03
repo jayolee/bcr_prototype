@@ -59,9 +59,10 @@ body, html {
   padding: 16px;
   text-align: center;
   color: #fff;
+  overflow: hidden;
 }
 .quoteContent{
-
+  z-index: 999;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -192,6 +193,8 @@ align-items: center;
 .goal{
   padding: 16px 0 24px 16px;
   color: #1E3E4C;
+  font-family: "montserrat";
+  align-self:flex-start;
 }
 .goal .titleWrap{
   display: flex;
@@ -226,17 +229,22 @@ align-items: center;
   flex-wrap: wrap;
 }
 .member{
-  width: 33%;
+  transition: .3s;
+  width: 33.3%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 16px 0;
+  padding: 16px 0;
+}
+.member.active{
+  background: #E7EBED;
 }
 .photo{
   width: 56px;
   height: 56px;
   border-radius: 28px;
   background: #ccc;
+  margin-bottom: 8px;
 }
 .name{
   font-family: "montserrat";
@@ -266,23 +274,48 @@ align-items: center;
 
 }
 .memberDetail{
+  transition: .3s;
+  overflow: hidden;
+  display: none;
+  opacity: 0;
+  height: 0;
   background: #E7EBED;
   color: #1E3E4C;
   padding: 32px;
   width: 100%;
 }
+#detail1, #detail2{
+  transition: .3s;
+}
 .memberDetail .title{
   font-weight: bold;
   font-size: 18px;
+  text-transform: uppercase;
 }
 .memberDetail .goalsWrapper{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 16px;
 }
 .goalsWrapper .member_goals{
   width: 50%;
   margin: 32px auto 8px;
+
+}
+.goalsWrapper .member_goals .title{
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.memberDetail .content{
+  font-family: "montserrat";
+  font-size: 14px;
+}
+#fire{
+  position:absolute;
+  left: 10px;
+  bottom: 0;
+  z-index: 0;
 }
 @media screen and (min-width: 1200px){
   .mainBody{
@@ -314,6 +347,7 @@ align-items: center;
   }
   .quoteContent{
     padding-bottom: 16px;
+
   }
   .quote .main{
     max-width: 380px;

@@ -1,6 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700, 900");
-@import url("https://fonts.googleapis.com/css?family=Catamaran:900");
 div, a, img, input {
   box-sizing: border-box; }
 
@@ -42,6 +40,7 @@ body, html {
   padding: 0;
   margin: 0;
   padding-bottom: 80px;
+  font-family: "montserrat";
 }
 .modules{
   background: #fff;
@@ -140,6 +139,9 @@ border:1px solid #e8e8ed;
   .white{
     stroke: #fff;
   }
+  .title{
+    font-family: "montserrat";
+  }
 .titleBar{
   padding: 14px;
   background: #738288;
@@ -150,49 +152,71 @@ border:1px solid #e8e8ed;
   display: flex;
   justify-content: space-between;
 }
-.assignment_content{
-  background: #F6F6F6;
-  width: 100%;
-  padding: 1px 24px;
-  height: 0;
-  transition: .3s;
-  overflow: hidden;
-}
-.assignment_content.active{
-  height: auto;
-  padding: 24px;
-}
-.assignment_content .title{
+.maintitle{
   font-family: "montserrat";
+  color: #1e3f4d;
   font-size: 14px;
-  color: #445664;
-  line-height: 1.4;
+  margin: 32px 0;
+  padding-bottom: 8px;
 }
-.assignment_content .answers{
-  width: 100%;
-  border:1px solid #e8e8ed;
-  height: 60px;
+.survey .title{
   font-family: "montserrat";
-  font-size: 12px;
-  padding: 8px;
-}
-.btn{
-  background: #B75A41;
+  color: #1e3f4d;
   font-size: 14px;
-  font-family: "pragati narrow";
-  width:125px;
-  height: 48px;
-  padding: 17px 0;
+  margin-bottom: 16px;
+ 
+}
+.survey .title.active{
   font-weight: bold;
-  line-height: 1;
-  text-align: center;
-  color: #fff;
-  margin: 32px auto;
-  cursor: pointer;
 }
 .inputWrapper{
-  vertical-align: top;
-  margin: 16px auto 32px;
+  font-family: "montserrat";
+  color: #1e3f4d;
+  font-size: 14px;
+  margin-bottom: 32px;
+
+}
+.inputWrapper.active{
+  display: block;
+}
+.inputWrapper .title{
+  border-top: 2px solid #dee2e5;
+  border-bottom: 2px solid #dee2e5;
+  padding: 8px 0;
+  text-align: center;
+  display: none;
+}
+.inputWrapper .options{
+  display: none;
+  border-bottom: 2px solid #dee2e5;
+  padding-bottom: 16px;
+  margin-bottom: 32px;
+}
+.inputWrapper.active .title{
+  display: block;
+}
+.inputWrapper.active .options, .buttons{
+  display: flex;
+  justify-content: space-around;
+}
+.buttons{
+  padding: 8px 0;
+  margin: 16px 0 32px;
+}
+.inputWrapper.active .buttons{
+  border-bottom: 1px solid #dee2e5;
+  padding-bottom: 8px;
+  margin: 4px 0 16px;
+}
+.buttons input[type="radio"]{
+  background: #C4C4C4;
+  border: 1px solid #c4c4c4;
+  width: 20px;
+  height: 20px;
+}
+.options .content{
+  font-size: 12px;
+  padding-bottom: 16px;
 }
 @media screen and (min-width: 1200px){
   .mainBody{

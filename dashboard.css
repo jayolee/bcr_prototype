@@ -56,7 +56,7 @@ body, html {
   position: relative;
   margin: 16px auto 8px;
   border-radius: 3px;
-  padding: 16px;
+  padding: 16px 44px 16px 16px;
   text-align: center;
   color: #fff;
   overflow: hidden;
@@ -90,7 +90,8 @@ align-items: center;
   align-items: center;
   position: absolute;
   right: 16px;
-  bottom: 16px;
+  top: 50%;
+  transform:translateY(-50%);
 }
 .arrow{
   stroke: #1E3E4C;
@@ -112,6 +113,9 @@ align-items: center;
   height: 106px;
   background: #ccc;
   align-self: center;
+}
+.resThumb img {
+  height: 100%;
 }
 .resContent{
   width: calc(100% - 106px);
@@ -321,6 +325,10 @@ align-items: center;
 #edit{
   margin-right: 4px;
 }
+.btn{
+  font-size: 14px;
+  color: #1E3E4C;
+}
 @media screen and (min-width: 1200px){
   .mainBody{
     display: flex;
@@ -330,7 +338,7 @@ align-items: center;
   }
   .resJourney{
     margin:16px 8px;
-    max-width: 375px;
+    width: 584px;
     align-self:flex-start;
   }
   .divider{
@@ -345,8 +353,9 @@ align-items: center;
     width: 154px;
     height: 154px;
   }
+
   .quote{
-    max-width: 600px;
+    width: 584px;
     height: 200px;
   }
   .quoteContent{

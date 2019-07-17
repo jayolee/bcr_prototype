@@ -4,7 +4,7 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Pragati+Narrow:400,700&display=swap" rel="stylesheet">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="assignment.css">
+    <link rel="stylesheet" href="survey.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
     <link rel="shortcut icon" href="favicon.png">
@@ -34,21 +34,22 @@
                 </div>
 
             <div class="divider">
-                <div class = "title">Before starting Phase 7, please take 60 seconds to complete this brief survey. Thank you!</div>
+                <div class = "maintitle">Before starting Phase 7, please take 60 seconds to complete this brief survey. Thank you!</div>
                 <div class="survey">
-                    <div class="title ">
-                            I have a better understanding of spiritual matters. </div>
+                    <div class="title active">
+                            * I have a better understanding of spiritual matters. </div>
                 </div>
                     <div class = "inputWrapper active">
                   <div class = "title">
                         As a result of my crisis, I experience this change to
                   </div>
-                   <div class="buttons ">
-                        <input type="radio">
-                        <input type="radio">
-                        <input type="radio">
-                        <input type="radio">
-                        <input type="radio">
+                   <div class="buttons">
+                        <input type="radio" name = "1">
+                        <input type="radio" name = "1">
+                        <input type="radio" name = "1">
+                        <input type="radio" name = "1">
+                        <input type="radio" name = "1">
+                        <input type="radio" name = "1">
                     </div>
                     <div class = "options">
                         <div class = "content">
@@ -74,18 +75,18 @@
                
                 <div class="survey">
                         <div class="title ">
-                                I have a better understanding of spiritual matters. </div>
-                    </div>
-                        <div class = "inputWrapper active">
+                                *I have a stronger religious faith. </div>
+                        <div class = "inputWrapper">
                       <div class = "title">
                             As a result of my crisis, I experience this change to
                       </div>
                        <div class="buttons ">
-                            <input type="radio">
-                            <input type="radio">
-                            <input type="radio">
-                            <input type="radio">
-                            <input type="radio">
+                            <input type="radio" name = "2">
+                            <input type="radio" name = "2">
+                            <input type="radio" name = "2">
+                            <input type="radio" name = "2">
+                            <input type="radio" name = "2">
+                            <input type="radio" name = "2">
                         </div>
                         <div class = "options">
                             <div class = "content">
@@ -108,21 +109,21 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="survey active">
                             <div class="title ">
-                                    I have a better understanding of spiritual matters. </div>
-                        </div>
-                            <div class = "inputWrapper active">
+                                    *I have a greater sense of harmony with the world.</div>
+                            <div class = "inputWrapper">
                           <div class = "title">
                                 As a result of my crisis, I experience this change to
                           </div>
                            <div class="buttons ">
-                                <input type="radio">
-                                <input type="radio">
-                                <input type="radio">
-                                <input type="radio">
-                                <input type="radio">
+                                <input type="radio" name = "3">
+                                <input type="radio" name = "3">
+                                <input type="radio" name = "3">
+                                <input type="radio" name = "3">
+                                <input type="radio" name = "3">
+                                <input type="radio" name = "3">
                             </div>
                             <div class = "options">
                                 <div class = "content">
@@ -165,14 +166,17 @@
             }
             })
 
-            var chapPosition = $(".divider").offset().top;
-            console.log(chapPosition);
+             var chapPosition = $(".divider").offset().top - 20;
             $(document).scroll(function(){
+                if($(window).width() >= 1200 ){
                 if($(document).scrollTop() > chapPosition){
                 $('.checklist').css({'position':'fixed' });
             } else{
                 $('.checklist').css({'position':'absolute'});
             }
+        } else{
+            $('.checklist').css({'position':'relative'});
+        }
             })
           
         </script>

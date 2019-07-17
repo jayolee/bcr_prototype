@@ -143,6 +143,7 @@
         <script>
             if(localStorage.getItem("txtfield")){
                 let txtfield = localStorage.getItem("txtfield");
+                console.log(txtfield);
                 for(let i = 0; i < txtfield.length; i ++){
                     let id = "input" + i;
                     if(localStorage.getItem(id)){

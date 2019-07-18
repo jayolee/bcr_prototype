@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+#footerWrap{
+  position:fixed;
+  width: 100%;
+  background: #1E3E4C;
+  height: 51px;
+  bottom: 0;
+  left: 0;
+  display:flex;
+  justify-content: center;
+}
+#footer{
+  margin: 0 auto;
+  max-width: 660px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#footer .iconwrap{
+  width: 80px;
+  text-align: center;
+  height: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:0 15px;
+}
+#footer .iconwrap .icon{
+  width: 26px;
+}
+#footer .iconwrap.active{
+  border-bottom: 3px solid #c55339;
+}

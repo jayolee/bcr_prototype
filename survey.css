@@ -39,7 +39,7 @@ body, html {
   background: #fff;
   padding: 0;
   margin: 0;
-  padding-bottom: 80px;
+  padding-bottom: 200px;
   font-family: "montserrat";
 }
 .modules{
@@ -173,8 +173,7 @@ border:1px solid #e8e8ed;
   font-family: "montserrat";
   color: #1e3f4d;
   font-size: 14px;
-  margin-bottom: 32px;
-
+  margin-bottom: 44px;
 }
 .inputWrapper.active{
   display: block;
@@ -185,12 +184,17 @@ border:1px solid #e8e8ed;
   padding: 8px 0;
   text-align: center;
   display: none;
+  height: 42px;
+  overflow: hidden;
+  transition: .3s;
 }
 .inputWrapper .options{
   display: none;
   border-bottom: 2px solid #dee2e5;
   padding-bottom: 16px;
   margin-bottom: 32px;
+  overflow: hidden;
+  transition: .3s;
 }
 .inputWrapper.active .title{
   display: block;

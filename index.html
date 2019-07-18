@@ -5,6 +5,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Pragati+Narrow:400,700&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="footer.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
     <link rel="shortcut icon" href="favicon.png">
@@ -13,43 +14,26 @@
 
 <body>
     <div id="header">
-            <a href="dashboard.html" >
-        <div id="topBar"> </div>
+        <a href="dashboard.html">
+            <div id="topBar"> </div>
         </a>
-        <div id="bottomBar"> </div>
+        <div id="bottomBar"><div class = "status">
+                Assignments
+        </div></div>
         </a>
 
         <div class="mainBody">
+
             <div class="resJourney mobile">
-                <div class="resThumb"></div>
-                <div class="resContent">
-                    <div class="boxtitle">Resume your journey</div>
-                    <div class="contents">
-                        <div>
-                            <div class="week">Week 64</div>
-                            <div class="title">Story</div>
-                            <div class="assignment"><b>Assignments:</b> 2 / 3 completed</div>
-                        </div>
-                        <div class="arrow right">
-                            <svg width="12px" height="18px">
-                                <path d="M 0 1 L 10 9 L 0 17" />
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-                <div class = "new">NEW</div>
-            </div>
- 
-            <div class="resJourney desktop">
-                    
+                <a href="assignment.html">
+                    <div class="resThumb"><img src="img/thumb.jpg" /> </div>
                     <div class="resContent">
                         <div class="boxtitle">Resume your journey</div>
                         <div class="contents">
-                                <div class="resThumb"></div>
-                            <div class = "wrapper">
+                            <div>
                                 <div class="week">Week 64</div>
                                 <div class="title">Story</div>
-                                <div class="assignment"><b>Assignments:</b> 2 / 3 completed</div>
+                                <div class="assignment"><b>Assignments:</b> <span class="progress_num" style="box-shadow:none">2</span> / 3 completed</div>
                             </div>
                             <div class="arrow right">
                                 <svg width="12px" height="18px">
@@ -58,170 +42,235 @@
                             </div>
                         </div>
                     </div>
-                    <div class = "new">NEW</div>
-                </div>
+                    <div class="new">NEW</div>
+                </a>
+            </div>
+
+
+            <div class="resJourney desktop">
+                <a href="assignment.html">
+                    <div class="resContent">
+                        <div class="boxtitle">Resume your journey</div>
+                        <div class="contents">
+                            <div class="resThumb"><img src="img/thumb.jpg" /> </div>
+                            <div class="wrapper">
+                                <div class="week">Week 64</div>
+                                <div class="title">Story</div>
+                                <div class="assignment"><b>Assignments:</b> <span class="progress_num" style="box-shadow:none">2</span>
+                                    / 3 completed</div>
+                            </div>
+                            <div class="arrow right">
+                                <svg width="12px" height="18px">
+                                    <path d="M 0 1 L 10 9 L 0 17" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new">NEW</div>
+                </a>
+            </div>
 
 
             <div class="divider">
-            <div id="progress">
-                <div id="progress_bar">
-                    <div id="greybar">
+                <div id="progress">
+                    <div id="progress_bar">
+                        <div id="greybar">
+                        </div>
+                        <div id="bar"></div>
+                        <div class="phaseNum">1</div>
+                        <div class="phaseNum">2</div>
+                        <div class="phaseNum">3</div>
+                        <div class="phaseNum">4</div>
+                        <div class="phaseNum" id="5">5</div>
+                        <div class="phaseNum active" id="6"><span>6</span></div>
+                        <div class="phaseNum deactive"></div>
                     </div>
-                    <div id="bar"></div>
-                    <div class="phaseNum">1</div>
-                    <div class="phaseNum">2</div>
-                    <div class="phaseNum">3</div>
-                    <div class="phaseNum">4</div>
-                    <div class="phaseNum"  id="5">5</div>
-                    <div class="phaseNum active"  id="6"><span>6</span></div>
-                    <div class="phaseNum deactive"></div>
-                </div>
-                <div id="progress_title">
+                    <div id="progress_title">
                         <a href="#">
-                    <div class="arrow left" id="prev"> <svg width="12px" height="18px">
-                            <path d="M 10 1 L 1 9 L 10 17" />
-                        </svg></div></a>
-                    <div class="progress_content">
-                        <div class="phase">Phase 6</div>
-                        <div class="title">Appreciation<span id = "break"><br /></span>for Life</div>
+                            <div class="arrow left" id="prev"> <svg width="12px" height="18px">
+                                    <path d="M 10 1 L 1 9 L 10 17" />
+                                </svg></div>
+                        </a>
+                        <div class="progress_content">
+                            <div class="phase">Phase 6</div>
+                            <div class="title">Appreciation<span id="break"><br /></span>for Life</div>
+                        </div>
+                        <div class="arrow right deactive">
+                            <svg width="12px" height="18px">
+                                <path d="M 0 1 L 10 9 L 0 17" />
+                            </svg>
+                        </div>
                     </div>
-                    <div class="arrow right deactive">
+                </div>
+
+                <div class="assignments">
+                    <div class="thumb"><img src="img/60.jpg" /></div>
+                    <div class="assignment_content">
+                        <div class="week">
+                            Week 57
+                        </div>
+                        <div class="title">
+                            Beginning of Phase 6
+                        </div>
+                    </div>
+                    <div class="arrow right">
                         <svg width="12px" height="18px">
                             <path d="M 0 1 L 10 9 L 0 17" />
                         </svg>
                     </div>
                 </div>
-            </div>
-          
-            <div class="assignments">
-                <div class="thumb"></div>
-                <div class="assignment_content">
-                    <div class="week">
-                        Week 57
+                <div class="assignments">
+                    <div class="thumb"><img src="img/61.jpg" /></div>
+                    <div class="assignment_content">
+                        <div class="week">
+                            Week 58
+                        </div>
+                        <div class="title">
+                            6.1 Education
+                        </div>
                     </div>
-                    <div class="title">
-                        Beginning of Phase 6
+                    <div class="arrow right">
+                        <svg width="12px" height="18px">
+                            <path d="M 0 1 L 10 9 L 0 17" />
+                        </svg>
+                    </div>
+
+                </div>
+                <div class="assignments">
+                    <div class="thumb"><img src="img/62.jpg" /></div>
+                    <div class="assignment_content">
+                        <div class="week">
+                            Week 60
+                        </div>
+                        <div class="title">
+                            6.2 Regulation
+                        </div>
+                    </div>
+                    <div class="arrow right">
+                        <svg width="12px" height="18px">
+                            <path d="M 0 1 L 10 9 L 0 17" />
+                        </svg>
                     </div>
                 </div>
-                <div class="arrow right">
-                    <svg width="12px" height="18px">
-                        <path d="M 0 1 L 10 9 L 0 17" />
-                    </svg>
-                </div>
-            </div>
-            <div class="assignments">
-                <div class="thumb"></div>
-                <div class="assignment_content">
-                    <div class="week">
-                        Week 58
+                <div class="assignments">
+                    <div class="thumb"><img src="img/63.jpg" /> </div>
+                    <div class="assignment_content">
+                        <div class="week">
+                            Week 63
+                        </div>
+                        <div class="title">
+                            6.3 Disclosure
+                        </div>
                     </div>
-                    <div class="title">
-                            6.1  Education
+                    <div class="arrow right">
+                        <svg width="12px" height="18px">
+                            <path d="M 0 1 L 10 9 L 0 17" />
+                        </svg>
                     </div>
                 </div>
-                <div class="arrow right">
-                    <svg width="12px" height="18px">
-                        <path d="M 0 1 L 10 9 L 0 17" />
-                    </svg>
+                <a href="assignment.html">
+                    <div class="assignments active">
+                        <div class="thumb"><img src="img/thumb.jpg" /> </div>
+                        <div class="assignment_content">
+                            <div class="week">
+                                Week 64
+                            </div>
+                            <div class="title">
+                                6.4 Story
+                            </div>
+                        </div>
+                        <div class="arrow right active">
+                            <svg width="12px" height="18px">
+                                <path d="M 0 1 L 10 9 L 0 17" />
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+                <div class="comingUp">
+                    Coming up next:
+                </div>
+                <div class="assignments deactive">
+                    <div class="thumb">
+                        <div class="dots">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                    <div class="assignment_content">
+                        <div class="week">
+                            Week 62
+                        </div>
+                        <div class="title">
+                            6.5 Service
+                        </div>
+                    </div>
+                    <div class="arrow right active">
+                        <svg width="12px" height="18px">
+
+                        </svg>
+                    </div>
                 </div>
 
             </div>
-            <div class="assignments">
-                <div class="thumb"></div>
-                <div class="assignment_content">
-                    <div class="week">
-                        Week 60
-                    </div>
-                    <div class="title">
-                            6.2  Regulation
-                    </div>
-                </div>
-                <div class="arrow right">
-                    <svg width="12px" height="18px">
-                        <path d="M 0 1 L 10 9 L 0 17" />
-                    </svg>
-                </div>
-            </div>
-            <div class="assignments">
-                <div class="thumb"></div>
-                <div class="assignment_content">
-                    <div class="week">
-                        Week 63
-                    </div>
-                    <div class="title">
-                            6.3  Disclosure
-                    </div>
-                </div>
-                <div class="arrow right">
-                    <svg width="12px" height="18px">
-                        <path d="M 0 1 L 10 9 L 0 17" />
-                    </svg>
-                </div>
-            </div>
-            <div class="assignments active">
-                <div class="thumb"></div>
-                <div class="assignment_content">
-                    <div class="week">
-                        Week 64
-                    </div>
-                    <div class="title">
-                            6.4  Story
-                    </div>
-                </div>
-                <div class="arrow right active">
-                    <svg width="12px" height="18px">
-                        <path d="M 0 1 L 10 9 L 0 17" />
-                    </svg>
-                </div>
-            </div>
-
-            <div class="comingUp">
-                Coming up next:
-            </div>
-            <div class="assignments deactive">
-                <div class="thumb">
-                    <div class="dots">
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                    </div>
-                </div>
-                <div class="assignment_content">
-                    <div class="week">
-                        Week 62
-                    </div>
-                    <div class="title">
-                            6.5  Service
-                    </div>
-                </div>
-                <div class="arrow right active">
-                    <svg width="12px" height="18px">
-
-                    </svg>
-                </div>
-            </div>
-
         </div>
-    </div>
-        <div id = "footerWrap">
-        <!-- <img src="footer.png" id="footer" /> -->
-    </div>
+        <div id="footerWrap">
+            <div id="footer">
+                <a href="dashboard.html">
+                    <div class="iconwrap">
+                        <img class="icon" src="icons/icon1.png" />
+                    </div>
+                </a>
+                <div class="iconwrap">
+                    <img class="icon" src="icons/icon2.png" />
+                </div>
+                <a href="index.html">
+                    <div class="iconwrap active">
+                        <img class="icon " src="icons/icon3.png" />
+                    </div>
+                </a>
+                <div class="iconwrap">
+                    <img class="icon" src="icons/icon4.png" />
+                </div>
+                <div class="iconwrap">
+                    <img class="icon" src="icons/icon5.png" />
+                </div>
+                <div class="iconwrap">
+                    <img class="icon" src="icons/icon6.png" />
+                </div>
+            </div>
+        </div>
         <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
             crossorigin="anonymous"></script>
         <script>
+            var progress = 0;
+            if (localStorage.getItem("checked")) {
+                var checked = JSON.parse(localStorage.getItem("checked"));
+                let keys = Object.keys(checked);
+                keys.forEach(function (element) {
+
+                    if (checked[element]) {
+                        progress += 1;
+                    }
+                })
+            }
+            $(".progress_num").text(progress);
             let width = $(window).width();
-            $(".progress_content").css("opacity","1");
-            $("#prev").click(function(){
-                if(width < 586){
-                $("#progress_bar").css("right","-12.28px");
+            $(".progress_content").css("opacity", "1");
+
+            function movetoPrev(){
+                if (width < 586) {
+                    $("#progress_bar").css("right", "-12.28px");
                 }
-                $(".progress_content").css("opacity","0");
+                $(".progress_content").css("opacity", "0");
                 $("#6").removeClass("active");
-                $("#progress_bar .phaseNum").css("margin-top","6px");
-                window.setTimeout(function(){
-                    window.location="index 2.html";
+                $("#progress_bar .phaseNum").css("margin-top", "6px");
+                window.setTimeout(function () {
+                    window.location = "index 2.html";
                 }, 200);
-            })
+            }
+            $("#prev").click(movetoPrev);
+            $("#5").click(movetoPrev)
         </script>
 </body>
 

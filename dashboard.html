@@ -5,6 +5,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Pragati+Narrow:400,700&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="footer.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
     <link rel="shortcut icon" href="favicon.png">
@@ -14,21 +15,31 @@
 <body>
     <div id="header">
         <div id="topBar"> </div>
-        <div id="bottomBar"> </div>
+        <div id="bottomBar">
+            <div class="menu active">
+                dashboard
+            </div>
+            <div class="menu">
+                the team
+            </div>
+            <div class="menu">
+                profile
+            </div>
+        </div>
     </div>
 
-        <div class="mainBody">
-            <div class="divider">
-                    <a href="quote.html" >
+    <div class="mainBody">
+        <div class="divider">
+            <a href="quote.html">
                 <div class="quote modules">
-                    <img src="fire.png" id = "fire"/>
-                   
+                    <img src="fire.png" id="fire" />
+
                     <div class="quoteContent">
                         <div class="main">“Human potential at its best is to transform a tragedy into a personal
                             triumph,
                             to turn one’s predicament into a human acheivement.”</div>
                         <div class="name">- Viktor E. Frankl</div>
-                      
+
                         <div class="arrow white arrowWrap">
                             <!-- See full quote &nbsp; -->
                             <svg width="12px" height="18px">
@@ -36,19 +47,20 @@
                             </svg>
                         </div>
                     </div>
-               
+
                 </div>
             </a>
-                <a href= "assignment.html" >
+            <a href="assignment.html">
                 <div class="resJourney mobile modules">
-                    <div class="resThumb"><img src = "img/thumb.jpg" /> </div>
+                    <div class="resThumb"><img src="img/thumb.jpg" /> </div>
                     <div class="resContent">
                         <div class="boxtitle">Resume your journey</div>
                         <div class="contents">
                             <div>
                                 <div class="week">Week 64</div>
                                 <div class="title">Appreciation for Life and Story</div>
-                                <div class="assignment"><b>Assignments:</b> 2 / 3 completed</div>
+                                <div class="assignment"><b>Assignments:</b> <span class="progress_num" style="box-shadow:none">2</span>
+                                    / 3 completed</div>
                             </div>
                             <div class="arrow ">
                                 <svg width="12px" height="18px">
@@ -58,17 +70,18 @@
                         </div>
                     </div>
                 </div>
-           
+
 
                 <div class="resJourney desktop modules">
                     <div class="resContent ">
                         <div class="boxtitle">Resume your journey</div>
                         <div class="contents">
-                            <div class="resThumb">  <img src = "img/thumb.jpg" /> </div>
+                            <div class="resThumb"> <img src="img/thumb.jpg" /> </div>
                             <div class="wrapper">
                                 <div class="week">Week 64</div>
                                 <div class="title">Appreciation for Life and Story</div>
-                                <div class="assignment"><b>Assignments:</b> 2 / 3 completed</div>
+                                <div class="assignment"><b>Assignments:</b> <span class="progress_num" style="box-shadow:none">2</span>
+                                    / 3 completed</div>
                             </div>
                             <div class="arrow right">
                                 <svg width="12px" height="18px">
@@ -77,13 +90,14 @@
                             </div>
                         </div>
                     </div>
-                </div> </a>
-            </div>
+                </div>
+            </a>
+        </div>
 
-            <div class="divider">
-                <div class="call modules">
-                    <div class="boxtitle nomargin">Upcoming Call</div>
-                    <a href="zoom.html">
+        <div class="divider">
+            <div class="call modules">
+                <div class="boxtitle nomargin">Upcoming Call</div>
+                <a href="zoom.html">
                     <div class="callContent">
                         <div class="title">Phase 3 Call</div>
                         <div class="date">May 31st 9:20am</div>
@@ -98,178 +112,217 @@
                         </div>
                     </div>
                 </a>
+            </div>
+
+            <div class="goal modules">
+                <div class="titleWrap ">
+                    <div class="boxtitle nomargin">Goal</div>
+                    <a href="edit-goal.html">
+                        <div class="btn"><img src="img/edit.png" id="edit" />Edit</div>
+                    </a>
                 </div>
-
-                <div class="goal modules">
-                    <div class="titleWrap ">
-                        <div class="boxtitle nomargin">Goal</div>
-                        <a href="edit-goal.html">
-                        <div class="btn"><img src= "img/edit.png" id="edit"/>Edit</div>
-                        </a>
-                    </div>
-                    <div class="goal_content ">
-                        <div class="title">Spirit</div>
-                        <div class="content">• In the next 30 days I will plan 2 family get together
-                        </div>
-                    </div>
-                    <div class="goal_content">
-                        <div class="title">Mind</div>
-                        <div class="content">• Mediate 5 minutes everyday for the next month
-                        </div>
-                    </div>
-                    <div class="goal_content">
-                        <div class="title">Finance</div>
-                        <div class="content">• Commit to paying off my mortage monthly
-
-                        </div>
-                    </div>
-                    <div class="goal_content noline">
-                        <div class="title">Body</div>
-                        <div class="content">• Run 30 minutes twice a week
-                            <br />• Cook homemade meals on weekdays for family</div>
-                    </div>
-                  
-
-                </div>
-
-                <div class="team modules">
-                    <div class="boxtitle nomargin">Your Team</div>
-                    <div class="memberWrap">
-                        <div class="member top">
-                            <div class="photo">
-                                <img src= "img/profile1.png" />
-                            </div>
-                            <div class="name">Ned</div>
-                        </div>
-                        <div class="member top">
-                            <div class="photo">
-                                    <img src= "img/profile2.png" />
-                            </div>
-                            <div class="name">John</div>
-                        </div>
-                        <div class="member top">
-                            <div class="photo">
-                                    <img src= "img/profile3.png" />
-                            </div>
-                            <div class="name">Smith</div>
-                        </div>
-                        <div class="memberDetail" id = "detail1">
-                            <div class="title">I AM...</div>
-                            <div class="content">a father and a husband</div>
-
-                            <div class="goalsWrapper">
-                                <div class="member_goals">
-                                    <div class="title">Mind</div>
-                                    <div class="content">No active goals</div>
-                                </div>
-                                <div class="member_goals">
-                                    <div class="title">Finance</div>
-                                    <div class="content">No active goals</div>
-                                </div>
-                                <div class="member_goals">
-                                    <div class="title">Body</div>
-                                    <div class="content">No active goals</div>
-                                </div>
-                                <div class="member_goals">
-                                    <div class="title">Spirit</div>
-                                    <div class="content">In the next 30 days I will plan 2 Daddy Daughter...</div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="member bottom">
-                            <div class="photo">
-                                    <img src= "img/profile4.png" />
-                            </div>
-                            <div class="name">Paul</div>
-                        </div>
-                        <div class="member bottom">
-                            <div class="photo">
-                                    <img src= "img/profile5.png" />
-                            </div>
-                            <div class="name">Eric</div>
-                        </div>
-                        <div class="memberDetail" id = "detail2">
-                                <div class="title">I AM...</div>
-                                <div class="content">a father and a husband</div>
-    
-                                <div class="goalsWrapper">
-                                    <div class="member_goals">
-                                        <div class="title">Mind</div>
-                                        <div class="content">No active goals</div>
-                                    </div>
-                                    <div class="member_goals">
-                                        <div class="title">Finance</div>
-                                        <div class="content">No active goals</div>
-                                    </div>
-                                    <div class="member_goals">
-                                        <div class="title">Body</div>
-                                        <div class="content">No active goals</div>
-                                    </div>
-                                    <div class="member_goals">
-                                        <div class="title">Spirit</div>
-                                        <div class="content">• In the next 30 days I will plan 2 family get together</div>
-                                    </div>
-                                </div>
-    
-                            </div>
+                <div class="goal_content ">
+                    <div class="title">Spirit</div>
+                    <div class="content">• In the next 30 days I will plan 2 family get together
                     </div>
                 </div>
+                <div class="goal_content">
+                    <div class="title">Mind</div>
+                    <div class="content">• Mediate 5 minutes everyday for the next month
+                    </div>
+                </div>
+                <div class="goal_content">
+                    <div class="title">Finance</div>
+                    <div class="content">• Commit to paying off my mortage monthly
+
+                    </div>
+                </div>
+                <div class="goal_content noline">
+                    <div class="title">Body</div>
+                    <div class="content">• Run 30 minutes twice a week
+                        <br />• Cook homemade meals on weekdays for family</div>
+                </div>
+
 
             </div>
-        </div>
-        <div id="footerWrap">
-            <!-- <img src="footer.png" id="footer" /> -->
-        </div>
-        <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
-            crossorigin="anonymous"></script>
-        <script>
-            let width = $(window).width();
-            $('.top').click(function(){
-                if($(this).hasClass("active")){
-                $('.member').removeClass("active");
-                $('#detail1').css({'height':'0px', "opacity":"0"});
-                $('#detail2').css({'height':'0px', "opacity":"0"});
-                window.setTimeout(function(){ $('#detail1').css('display','none'); $('#detail2').css('display','none');},200)
-                } else{
-                    $('.member').removeClass("active");
-                    $('#detail1').css({'height':'0px', "opacity":"0"});
-                    $('#detail2').css({'height':'0px', "opacity":"0"});
-                    window.setTimeout(function(){ 
-                        $('#detail1').css('display','none'); 
-                        $('#detail2').css('display','none')
-                        $(this).addClass("active");
-                    $('#detail1').css({"display":"block"});
-                    window.setTimeout(function(){$('#detail1').css({'height':'308px', "display":"block", "opacity":"1"});}, 10);
-                 }.bind(this),200)
-                
-                    }
-               
-                
-            });
 
-             $('.bottom').click(function(){
-                if($(this).hasClass("active")){
+            <div class="team modules">
+                <div class="boxtitle nomargin">Your Team</div>
+                <div class="memberWrap">
+                    <div class="member top">
+                        <div class="photo">
+                            <img src="img/profile1.png" />
+                        </div>
+                        <div class="name">Ned</div>
+                    </div>
+                    <div class="member top">
+                        <div class="photo">
+                            <img src="img/profile2.png" />
+                        </div>
+                        <div class="name">John</div>
+                    </div>
+                    <div class="member top">
+                        <div class="photo">
+                            <img src="img/profile3.png" />
+                        </div>
+                        <div class="name">Smith</div>
+                    </div>
+                    <div class="memberDetail" id="detail1">
+                        <div class="title">I AM...</div>
+                        <div class="content">a father and a husband</div>
+
+                        <div class="goalsWrapper">
+                            <div class="member_goals">
+                                <div class="title">Mind</div>
+                                <div class="content">No active goals</div>
+                            </div>
+                            <div class="member_goals">
+                                <div class="title">Finance</div>
+                                <div class="content">No active goals</div>
+                            </div>
+                            <div class="member_goals">
+                                <div class="title">Body</div>
+                                <div class="content">No active goals</div>
+                            </div>
+                            <div class="member_goals">
+                                <div class="title">Spirit</div>
+                                <div class="content">In the next 30 days I will plan 2 Daddy Daughter...</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="member bottom">
+                        <div class="photo">
+                            <img src="img/profile4.png" />
+                        </div>
+                        <div class="name">Paul</div>
+                    </div>
+                    <div class="member bottom">
+                        <div class="photo">
+                            <img src="img/profile5.png" />
+                        </div>
+                        <div class="name">Eric</div>
+                    </div>
+                    <div class="memberDetail" id="detail2">
+                        <div class="title">I AM...</div>
+                        <div class="content">a father and a husband</div>
+
+                        <div class="goalsWrapper">
+                            <div class="member_goals">
+                                <div class="title">Mind</div>
+                                <div class="content">No active goals</div>
+                            </div>
+                            <div class="member_goals">
+                                <div class="title">Finance</div>
+                                <div class="content">No active goals</div>
+                            </div>
+                            <div class="member_goals">
+                                <div class="title">Body</div>
+                                <div class="content">No active goals</div>
+                            </div>
+                            <div class="member_goals">
+                                <div class="title">Spirit</div>
+                                <div class="content">• In the next 30 days I will plan 2 family get together</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="footerWrap">
+        <div id="footerWrap">
+            <div id="footer">
+                <a href="dashboard.html">
+                    <div class="iconwrap  active">
+                        <img class="icon" src="icons/icon1.png" />
+                    </div>
+                </a>
+                <div class="iconwrap">
+                    <img class="icon" src="icons/icon2.png" />
+                </div>
+                <a href="index.html">
+                    <div class="iconwrap">
+                        <img class="icon " src="icons/icon3.png" />
+                    </div>
+                </a>
+                <div class="iconwrap">
+                    <img class="icon" src="icons/icon4.png" />
+                </div>
+                <div class="iconwrap">
+                    <img class="icon" src="icons/icon5.png" />
+                </div>
+                <div class="iconwrap">
+                    <img class="icon" src="icons/icon6.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+        crossorigin="anonymous"></script>
+    <script>
+        var progress = 0;
+        if (localStorage.getItem("checked")) {
+            var checked = JSON.parse(localStorage.getItem("checked"));
+            let keys = Object.keys(checked);
+            keys.forEach(function (element) {
+
+                if (checked[element]) {
+                    progress += 1;
+                }
+            })
+        }
+        $(".progress_num").text(progress);
+
+        let width = $(window).width();
+        $('.top').click(function () {
+            if ($(this).hasClass("active")) {
                 $('.member').removeClass("active");
-                $('#detail1').css({'height':'0px', "opacity":"0"});
-                $('#detail2').css({'height':'0px', "opacity":"0"});
-                window.setTimeout(function(){ $('#detail1').css('display','none'); $('#detail2').css('display','none')},300)
-                } else{
-                    $('.member').removeClass("active");
-                    $('#detail1').css({'height':'0px', "opacity":"0"});
-                    $('#detail2').css({'height':'0px', "opacity":"0"});
-                    window.setTimeout(function(){ $('#detail1').css('display','none'); 
-                    $('#detail2').css('display','none')
+                $('#detail1').css({ 'height': '0px', "opacity": "0" });
+                $('#detail2').css({ 'height': '0px', "opacity": "0" });
+                window.setTimeout(function () { $('#detail1').css('display', 'none'); $('#detail2').css('display', 'none'); }, 200)
+            } else {
+                $('.member').removeClass("active");
+                $('#detail1').css({ 'height': '0px', "opacity": "0" });
+                $('#detail2').css({ 'height': '0px', "opacity": "0" });
+                window.setTimeout(function () {
+                    $('#detail1').css('display', 'none');
+                    $('#detail2').css('display', 'none')
                     $(this).addClass("active");
-                    $('#detail2').css({"display":"block"});
-                    window.setTimeout(function(){$('#detail2').css({'height':'308px', "display":"block", "opacity":"1"});}, 50);
-                }.bind(this),200)
-               
-                   }
-               
-                
-            });
-        </script>
+                    $('#detail1').css({ "display": "block" });
+                    window.setTimeout(function () { $('#detail1').css({ 'height': '308px', "display": "block", "opacity": "1" }); }, 10);
+                }.bind(this), 200)
+
+            }
+
+
+        });
+
+        $('.bottom').click(function () {
+            if ($(this).hasClass("active")) {
+                $('.member').removeClass("active");
+                $('#detail1').css({ 'height': '0px', "opacity": "0" });
+                $('#detail2').css({ 'height': '0px', "opacity": "0" });
+                window.setTimeout(function () { $('#detail1').css('display', 'none'); $('#detail2').css('display', 'none') }, 300)
+            } else {
+                $('.member').removeClass("active");
+                $('#detail1').css({ 'height': '0px', "opacity": "0" });
+                $('#detail2').css({ 'height': '0px', "opacity": "0" });
+                window.setTimeout(function () {
+                    $('#detail1').css('display', 'none');
+                    $('#detail2').css('display', 'none')
+                    $(this).addClass("active");
+                    $('#detail2').css({ "display": "block" });
+                    window.setTimeout(function () { $('#detail2').css({ 'height': '308px', "display": "block", "opacity": "1" }); }, 50);
+                }.bind(this), 200)
+
+            }
+
+
+        });
+    </script>
 </body>
 
 </html>

@@ -5,6 +5,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Pragati+Narrow:400,700&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <link rel="stylesheet" href="assignment.css">
+    <link rel="stylesheet" href="footer.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
     <link rel="shortcut icon" href="favicon.png">
@@ -14,180 +15,266 @@
 <body>
     <div id="header">
         <div id="topBar"> </div>
-        <div id="bottomBar"> </div>
+        <div id="bottomBar"> <a href="index.html"><div class = "status">
+           
+                <div class="arrow"> <svg width="8px" height="10px">
+                        <path d="M 6 1 L 1 5 L 6 9" />
+                    </svg></div>
+                    Assignments
+        </div> </a></div>
     </div>
-        <div class = "curChapter">
-            <div class = "wrapper">
-            <div class ="week">Week 13</div>
-            <div class = "title">Read Chapters 42-46</div>
+    <div class="curChapter">
+        <div class="wrapper">
+            <div class="week">Week 13</div>
+            <div class="title">Read Chapters 42-46</div>
         </div>
+    </div>
+    <div class="mainBody">
+        <div class="checklist modules">
+            <div class="title">Assignment Checklist:</div>
+            <div class="checkContent">
+                <input type="checkbox" id="check1" />
+                <img src="img/read.png" />
+                <div class="content">Read Chapters 42 - 46 (p. 286 - 303)</div>
+            </div>
+            <div class="checkContent">
+                <input type="checkbox" id="check2" />
+                <img src="img/new.png" />
+                <div class="content">Reflect in the workbook or write in the boxes below</div>
+            </div>
+            <div class="checkContent">
+                <input type="checkbox" id="check3" />
+                <img src="img/convo.png" />
+                <div class="content">Discuss reflections on weekly call</div>
+            </div>
         </div>
-        <div class="mainBody">
-        
-                <div class="checklist modules">
-                   <div class = "title">Assignment Checklist:</div>
-                    <div class="checkContent">
-                        <input type = "checkbox" />
-                        <img src = "img/read.png" />
-                        <div class = "content">Read Chapters 42 - 46 (p. 286 - 303)</div>
-                    </div>
-                    <div class="checkContent">
-                        <input type = "checkbox" />
-                        <img src= "img/new.png" />
-                        <div class = "content">Reflect in the workbook or write in the boxes below</div>
-                    </div>
-                    <div class="checkContent">
-                        <input type = "checkbox" />
-                        <img src = "img/convo.png" />
-                        <div class = "content">Discuss reflections on weekly call</div>
-                    </div>
+
+        <div class="divider">
+
+            <div class="titleBar"><span><b>Chapter 42:</b>&nbsp;Labyrinth 2 (p. 286-292) </span>
+                <div class="arrow white arrowWrap active">
+                    <!-- See full quote &nbsp; -->
+                    <svg width="12px" height="18px">
+                        <path d="M 0 1 L 10 9 L 0 17" />
+                    </svg>
+                </div>
+            </div>
+            <div class="assignment_content active">
+                <div class="title ">
+                    1. Reflect on the quote on <b>page 287,</b> and consider your own experiences. Write your thoughts
+                    down in the blank space on <b>page 286.</b>
+                </div>
+                <div class="inputWrapper">
+                    <input type="text" id="input1" class="answers" placeholder="Or write answers here..." />
+                </div>
+                <div class="title ">
+                    2. Reflect back on your second labyrinth walk, and what was going through your mind, heart, and
+                    spirit. Capture your recollections on <b>page 290.</b></div>
+                <div class="inputWrapper">
+                    <input type="text" id="input2" class="answers" placeholder="Or write answers here..." />
                 </div>
 
-            <div class="divider">
-                <div class = "titleBar"><span><b>Chapter 42:</b>&nbsp;Labyrinth 2 (p. 286-292) </span>
-                    <div class="arrow white arrowWrap active">
-                            <!-- See full quote &nbsp; -->
-                            <svg width="12px" height="18px">
-                                <path d="M 0 1 L 10 9 L 0 17" />
-                            </svg>
-                        </div>
-                </div>
-                <div class="assignment_content active">
-                    <div class="title ">
-                            1. Reflect on the quote on <b>page 287,</b> and consider your own experiences. Write your thoughts down in the blank space on <b>page 286.</b>
-                    </div>
-                    <div class = "inputWrapper">
-                   <input type = "text" id = "input1" class = "answers" placeholder="Or write answers here..."/>
-                </div>
-                   <div class="title ">
-                        2. Reflect back on your second labyrinth walk, and what was going through your mind, heart, and spirit. Capture your recollections on <b>page 290.</b></div>
-                        <div class = "inputWrapper">
-               <input type = "text" id = "input2" class = "answers" placeholder="Or write answers here..." />
-                        </div>
-                        
-               <div class="title ">
-                    3. One of the most challenging parts of being a Warrior is the loss of your tribe at the end of active service. At Warrior PATHH, you had the chance to form a new tribe. Reflect on what that experience was like, and how it has been since Initiation, and write your thoughts on the top of <b>page 291.</b></div>
-                    <div class = "inputWrapper">
-           <input type = "text" class = "answers" id = "input3" placeholder="Or write answers here..."/>
-          
-                        </div> <div class= "btn">Save</div>
-                </div>
+                <div class="title ">
+                    3. One of the most challenging parts of being a Warrior is the loss of your tribe at the end of
+                    active service. At Warrior PATHH, you had the chance to form a new tribe. Reflect on what that
+                    experience was like, and how it has been since Initiation, and write your thoughts on the top of <b>page
+                        291.</b></div>
+                <div class="inputWrapper">
+                    <input type="text" class="answers" id="input3" placeholder="Or write answers here..." />
 
-                <div class = "titleBar"><span><b>Chapter 43:</b> Mandala 2 (p. 293-294)</span>
-                    <div class="arrow white arrowWrap">
-                            <!-- See full quote &nbsp; -->
-                            <svg width="12px" height="18px">
-                                <path d="M 0 1 L 10 9 L 0 17" />
-                            </svg>
-                        </div>
                 </div>
-                <div class="assignment_content">
-                        <div class="title ">
-                                1. Reflect on the quote on <b>page 287,</b> and consider your own experiences. Write your thoughts down in the blank space on <b>page 286.</b>
-                        </div>
-                        <div class = "inputWrapper">
-                       <input type = "text" id = "input4" class = "answers" placeholder="Or write answers here..."/>
-                    </div>
-                       <div class="title ">
-                            2. Reflect back on your second labyrinth walk, and what was going through your mind, heart, and spirit. Capture your recollections on <b>page 290.</b></div>
-                            <div class = "inputWrapper">
-                   <input type = "text" class = "answers" id = "input5" placeholder="Or write answers here..." />
-                            </div>
-                            
-                   <div class="title ">
-                        3. One of the most challenging parts of being a Warrior is the loss of your tribe at the end of active service. At Warrior PATHH, you had the chance to form a new tribe. Reflect on what that experience was like, and how it has been since Initiation, and write your thoughts on the top of <b>page 291.</b></div>
-                        <div class = "inputWrapper">
-               <input type = "text" class = "answers" id = "input6" placeholder="Or write answers here..."/>
-               <div class= "btn">Save</div>
-                            </div>
-                </div>
+                <div class="btn">Save</div>
+            </div>
 
-          
-
-            <div class = "titleBar"><span><b>Chapter 44:</b> Individual Meditation 2 (p. 236-237)</span>
+            <div class="titleBar"><span><b>Chapter 43:</b> Mandala 2 (p. 293-294)</span>
                 <div class="arrow white arrowWrap">
-                        <!-- See full quote &nbsp; -->
-                        <svg width="12px" height="18px">
-                            <path d="M 0 1 L 10 9 L 0 17" />
-                        </svg>
-                    </div>
+                    <!-- See full quote &nbsp; -->
+                    <svg width="12px" height="18px">
+                        <path d="M 0 1 L 10 9 L 0 17" />
+                    </svg>
+                </div>
             </div>
             <div class="assignment_content">
-                    <div class="title ">
-                            1. Reflect on the quote on <b>page 287,</b> and consider your own experiences. Write your thoughts down in the blank space on <b>page 286.</b>
-                    </div>
-                    <div class = "inputWrapper">
-                   <input type = "text" class = "answers" id = "input7" placeholder="Or write answers here..."/>
+                <div class="title ">
+                    1. Reflect on the quote on <b>page 287,</b> and consider your own experiences. Write your thoughts
+                    down in the blank space on <b>page 286.</b>
                 </div>
-                   <div class="title ">
-                        2. Reflect back on your second labyrinth walk, and what was going through your mind, heart, and spirit. Capture your recollections on <b>page 290.</b></div>
-                        <div class = "inputWrapper">
-               <input type = "text" class = "answers" id = "input8" placeholder="Or write answers here..." />
-                        </div>
-                        
-               <div class="title ">
-                    3. One of the most challenging parts of being a Warrior is the loss of your tribe at the end of active service. At Warrior PATHH, you had the chance to form a new tribe. Reflect on what that experience was like, and how it has been since Initiation, and write your thoughts on the top of <b>page 291.</b></div>
-                    <div class = "inputWrapper">
-           <input type = "text" class = "answers" id = "input9" placeholder="Or write answers here..."/>
-           <div class= "btn">Save</div>
-                        </div>
+                <div class="inputWrapper">
+                    <input type="text" id="input4" class="answers" placeholder="Or write answers here..." />
+                </div>
+                <div class="title ">
+                    2. Reflect back on your second labyrinth walk, and what was going through your mind, heart, and
+                    spirit. Capture your recollections on <b>page 290.</b></div>
+                <div class="inputWrapper">
+                    <input type="text" class="answers" id="input5" placeholder="Or write answers here..." />
+                </div>
+
+                <div class="title ">
+                    3. One of the most challenging parts of being a Warrior is the loss of your tribe at the end of
+                    active service. At Warrior PATHH, you had the chance to form a new tribe. Reflect on what that
+                    experience was like, and how it has been since Initiation, and write your thoughts on the top of <b>page
+                        291.</b></div>
+                <div class="inputWrapper">
+                    <input type="text" class="answers" id="input6" placeholder="Or write answers here..." />
+
+                </div>
+                <div class="btn">Save</div>
             </div>
 
+
+
+            <div class="titleBar"><span><b>Chapter 44:</b> Individual Meditation 2 (p. 236-237)</span>
+                <div class="arrow white arrowWrap">
+                    <!-- See full quote &nbsp; -->
+                    <svg width="12px" height="18px">
+                        <path d="M 0 1 L 10 9 L 0 17" />
+                    </svg>
+                </div>
+            </div>
+            <div class="assignment_content">
+                <div class="title ">
+                    1. Reflect on the quote on <b>page 287,</b> and consider your own experiences. Write your thoughts
+                    down in the blank space on <b>page 286.</b>
+                </div>
+                <div class="inputWrapper">
+                    <input type="text" class="answers" id="input7" placeholder="Or write answers here..." />
+                </div>
+                <div class="title ">
+                    2. Reflect back on your second labyrinth walk, and what was going through your mind, heart, and
+                    spirit. Capture your recollections on <b>page 290.</b></div>
+                <div class="inputWrapper">
+                    <input type="text" class="answers" id="input8" placeholder="Or write answers here..." />
+                </div>
+
+                <div class="title ">
+                    3. One of the most challenging parts of being a Warrior is the loss of your tribe at the end of
+                    active service. At Warrior PATHH, you had the chance to form a new tribe. Reflect on what that
+                    experience was like, and how it has been since Initiation, and write your thoughts on the top of <b>page
+                        291.</b></div>
+                <div class="inputWrapper">
+                    <input type="text" class="answers" id="input9" placeholder="Or write answers here..." />
+
+                </div>
+                <div class="btn">Save</div>
+            </div>
+
+        </div>
+    </div>
+    <div id="msg">Saved</div>
+    <div id="footerWrap">
+        <div id="footer">
+            <a href="dashboard.html">
+                <div class="iconwrap">
+                    <img class="icon" src="icons/icon1.png" />
+                </div>
+            </a>
+            <div class="iconwrap">
+                <img class="icon" src="icons/icon2.png" />
+            </div>
+            <a href="index.html">
+                <div class="iconwrap active">
+                    <img class="icon " src="icons/icon3.png" />
+                </div>
+            </a>
+            <div class="iconwrap">
+                <img class="icon" src="icons/icon4.png" />
+            </div>
+            <div class="iconwrap">
+                <img class="icon" src="icons/icon5.png" />
+            </div>
+            <div class="iconwrap">
+                <img class="icon" src="icons/icon6.png" />
             </div>
         </div>
-        <div id="footerWrap">
-            <!-- <img src="footer.png" id="footer" /> -->
-        </div>
-        <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
-            crossorigin="anonymous"></script>
-        <script>
-            if(localStorage.getItem("txtfield")){
-                let txtfield = localStorage.getItem("txtfield");
-                console.log(txtfield);
-                for(let i = 0; i < txtfield.length; i ++){
-                    let id = "input" + i;
-                    if(localStorage.getItem(id)){
-                        $("#"+id).value = localStorage.getItem(id);
-                    }
-            }
-            }
-            
-            let width = $(window).width();
-            $('.arrow').click(function(){
-                if($(this).hasClass("active")){
-                    $(this).removeClass("active");
-                    $(this).parent().next().removeClass("active");
-                } else{
-                $(this).addClass("active");
-                $(this).parent().next().addClass("active");
-            }
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+        crossorigin="anonymous"></script>
+    <script>
+        if (localStorage.getItem("txtfield")) {
+            var contents = JSON.parse(localStorage.getItem("txtfield"));
+            let keys = Object.keys(contents);
+            keys.forEach(function (element) {
+                if (contents[element]) {
+                    $("#" + element).val(contents[element]);
+                }
             })
-
-            var chapPosition = $(".divider").offset().top - 20;
-            $(document).scroll(function(){
-                if($(window).width() >= 1200 ){
-                if($(document).scrollTop() > chapPosition){
-                $('.checklist').css({'position':'fixed' });
-            } else{
-                $('.checklist').css({'position':'absolute'});
-            }
-        } else{
-            $('.checklist').css({'position':'relative'});
+        } else {
+            var contents = {}
         }
+        if (localStorage.getItem("checked")) {
+            var checked = JSON.parse(localStorage.getItem("checked"));
+            let keys = Object.keys(checked);
+            keys.forEach(function (element) {
+               
+                if (checked[element]) {
+                    $("#" + element).prop('checked', true);
+                }
             })
-        
-        var contents = {};
-          $('.btn').click(function(){
-              let inputs = $(this).parent().find('input');
-              for(let i = 0; i < 3; i ++){
-                  let id = inputs[i].id;
-                  if(inputs[i].value){
-                      contents[id] = inputs[i].value;
-                  }
-              }
-              localStorage.setItem("txtfield", contents);
-          })
-        </script>
+        } else {
+            var checked = {}
+        }
+        let width = $(window).width();
+        $('.titleBar').click(function () {
+            let arrow = $(this).find(".arrow");
+            if (arrow.hasClass("active")) {
+                arrow.removeClass("active");
+                $(this).next().removeClass("active");
+            } else {
+                arrow.addClass("active");
+                $(this).next().addClass("active");
+            }
+        })
+
+        var chapPosition = $(".divider").offset().top - 20;
+        $(document).scroll(function () {
+            if ($(window).width() >= 1200) {
+                if ($(document).scrollTop() > chapPosition) {
+                    $('.checklist').css({ 'position': 'fixed' });
+                } else {
+                    $('.checklist').css({ 'position': 'absolute' });
+                }
+            } else {
+                $('.checklist').css({ 'position': 'relative' });
+            }
+        })
+        $('.btn').click(function () {
+            let inputs = $(this).parent().find('input');
+            for (let i = 0; i < 3; i++) {
+                let id = inputs[i].id;
+                if (inputs[i].value) {
+                    contents[id] = inputs[i].value;
+                }
+            }
+            let contents_string = JSON.stringify(contents);
+            localStorage.setItem("txtfield", contents_string);
+            displayMsg();
+        })
+
+        $('input[type=checkbox]').click(function () {
+            if ($(this).prop("checked") === true) {
+                checked[$(this).attr('id')] = true;
+            } else {
+                checked[$(this).attr('id')] = false;
+            }
+            let checkbox_string = JSON.stringify(checked);
+            localStorage.setItem("checked", checkbox_string);
+            displayMsg();
+        })
+
+        function displayMsg() {
+            $("#msg").css("display", "block");
+            window.setTimeout(function () {
+                $("#msg").css("opacity", "1");
+                window.setTimeout(function () {
+                    $("#msg").css({ "opacity": "0" })
+                    window.setTimeout(function () {
+                        $("#msg").css({ "display": "none" })
+
+                    }, 300)
+                }, 1000)
+            }, 10)
+        }
+    </script>
 </body>
 
 </html>

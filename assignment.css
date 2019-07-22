@@ -105,6 +105,7 @@ body, html {
   font-family: "pragati narrow";
   font-weight: bold;
   color: #fff;
+  line-height: 1.2;
 }
 .checklist{
   text-align: left;
@@ -246,7 +247,7 @@ border:1px solid #e8e8ed;
   .divider{
     display: flex;
     flex-direction: column;
-    padding-top: 16px;
+    padding-top: 32px;
     width: 100%;
     margin:0 auto;
     max-width: calc(1200px);
@@ -261,7 +262,7 @@ border:1px solid #e8e8ed;
     top: 0;
   }
   .modules{
-    margin: 16px 8px 0;
+    margin: 32px 8px 0;
   }
   .mobile{
     display:none;

@@ -32,8 +32,36 @@ body, html {
 #topBar{
   background: #1e3f4d;
 }
+
 #bottomBar{
   border-bottom: 1px solid #000;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding:0 20px;
+}
+#bottomBar .status{
+  text-transform: uppercase;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 14px;
+  color: #1e3f4d;
+  font-weight: bold;
+  margin-right: 16px;
+  display: flex;
+  cursor: pointer;
+}
+#bottomBar .status .arrow{
+  stroke: #1e3f4d;
+  stroke-width: 3px;
+  fill: none;
+  transform: rotate(0deg);
+  padding-top: 2px;
+  margin-right: 10px;
+}
+#bottomBar .menu.active{
+
+  padding-bottom: 6px;
+  border-bottom: 3px solid #c55339;
 }
 .mainBody{
   background: #fff;
@@ -79,6 +107,7 @@ body, html {
   font-family: "pragati narrow";
   font-weight: bold;
   color: #fff;
+  line-height: 1.2;
 }
 .checklist{
   text-align: left;
@@ -159,6 +188,9 @@ border:1px solid #e8e8ed;
   margin: 32px 0;
   padding-bottom: 8px;
 }
+.survey{
+  padding-bottom: 32px;
+}
 .survey .title{
   font-family: "montserrat";
   color: #1e3f4d;
@@ -222,6 +254,34 @@ border:1px solid #e8e8ed;
   font-size: 12px;
   padding-bottom: 16px;
 }
+
+.btn{
+  background: #B75A41;
+  font-size: 14px;
+  font-family: "pragati narrow";
+  width:125px;
+  height: 48px;
+  padding: 17px 0;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+  margin: 32px auto;
+  cursor: pointer;
+}
+.divider{
+  padding:0 16px;
+}
+@media screen and (max-width: 1200px){
+  .options .content{
+    font-size: 11px;
+    padding: 0 1px;
+    text-align: center;
+  }
+  .inputWrapper.active .title{
+    font-size: 12px;
+  }
+}
 @media screen and (min-width: 1200px){
   .mainBody{
     display: flex;
@@ -249,7 +309,7 @@ border:1px solid #e8e8ed;
     top: 0;
   }
   .modules{
-    margin: 16px 8px 0;
+    margin: 32px 8px 0;
   }
   .mobile{
     display:none;
@@ -272,6 +332,7 @@ border:1px solid #e8e8ed;
     margin-bottom: 4px;
     font-size: 14px;
   }
+
   .contents .assignment{
     margin-top: 24px;
     font-size: 16px;

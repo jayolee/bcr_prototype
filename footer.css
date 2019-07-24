@@ -18,6 +18,10 @@
   align-items: center;
   justify-content: space-between;
 }
+#footer a{
+  text-align: center;
+  max-width: 110px;
+}
 #footer .iconwrap{
   width: 80px;
   text-align: center;

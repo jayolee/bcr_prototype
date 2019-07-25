@@ -324,6 +324,15 @@ align-items: center;
 .desktop{
   display: none;
 }
+.assignments .greenArrow{
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  margin-left: 8px;
+}
+.assignments .greenArrow#curGreen{
+  display: none;
+}
 @media screen and (min-width: 1200px){
   .mainBody{
     display: flex;

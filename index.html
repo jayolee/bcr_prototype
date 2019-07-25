@@ -126,7 +126,7 @@
                             Week 58
                         </div>
                         <div class="title">
-                            6.1 Education
+                            6.1 Education<img class = "greenArrow" src = "img/green.png" />
                         </div>
                     </div>
                     <div class="arrow right">
@@ -143,7 +143,7 @@
                             Week 60
                         </div>
                         <div class="title">
-                            6.2 Regulation
+                            6.2 Regulation<img class = "greenArrow" src = "img/green.png" />
                         </div>
                     </div>
                     <div class="arrow right">
@@ -176,7 +176,7 @@
                                 Week 64
                             </div>
                             <div class="title">
-                                6.4 Story
+                                6.4 Story<img class = "greenArrow" src = "img/green.png" id = "curGreen" />
                             </div>
                         </div>
                         <div class="arrow right active">
@@ -253,6 +253,9 @@
                         progress += 1;
                     }
                 })
+            }
+            if(progress === 3){
+                $("#curGreen").css("display","inline-block");
             }
             $(".progress_num").text(progress);
             let width = $(window).width();

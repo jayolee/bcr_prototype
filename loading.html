@@ -4,7 +4,7 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Pragati+Narrow:400,700&display=swap" rel="stylesheet">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="quote.css">
+    <link rel="stylesheet" href="loading.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
     <link rel="shortcut icon" href="favicon.png">
@@ -35,12 +35,16 @@
 
         </div>
         <img src= "img/logo_white.png" id="logo"/>
-        <div class="bg">The Garden, Boulder Crest Virginia</div>
+        <div class="skip">Skip</div>
     </div>
     <script>
     window.setTimeout(function(){
-        window.location.replace("https://jayolee.github.io/bcr_prototype/dashboard.html");
-    },5000)
+        window.location.assign("https://jayolee.github.io/bcr_prototype/dashboard.html");
+    },10000)
+    let button = document.getElementsByClassName("skip")[0]
+button.addEventListener("click",(function(){
+        window.location.assign("https://jayolee.github.io/bcr_prototype/dashboard.html");
+    }))
     </script>
 </body>
 
